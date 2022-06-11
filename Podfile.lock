@@ -1,0 +1,30 @@
+PODS:
+  - QQCorner (2.0.2)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+  - SnapKit (5.0.1)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - QQCorner
+  - SDWebImage
+  - SnapKit
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - QQCorner
+    - SDWebImage
+    - SnapKit
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  QQCorner: ab7df42e0aacb48dea6912542fab0aaac39c909e
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 45af209d38c4332a1f5715dc23312999e915c82b
+
+COCOAPODS: 1.11.2

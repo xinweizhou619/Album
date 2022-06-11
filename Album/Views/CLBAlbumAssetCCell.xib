@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CLBAlbumAssetCCell" customModule="CleanB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WxD-C6-5PW">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="155"/>
+                    </imageView>
+                    <view hidden="YES" alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7KH-hI-VLT">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="155"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8I-rJ-ATd">
+                        <rect key="frame" x="161" y="115" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="pYX-lB-7Cy"/>
+                            <constraint firstAttribute="height" constant="40" id="yaW-W0-EA7"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="privacy_album_item_unselect"/>
+                        <state key="selected" image="privacy_album_item_select"/>
+                        <connections>
+                            <action selector="selectBtnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="VQi-1X-yq1"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="WxD-C6-5PW" secondAttribute="trailing" id="46f-8D-q0k"/>
+                <constraint firstAttribute="bottom" secondItem="7KH-hI-VLT" secondAttribute="bottom" id="6iC-jM-0If"/>
+                <constraint firstItem="7KH-hI-VLT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6v0-WO-j4E"/>
+                <constraint firstAttribute="bottom" secondItem="M8I-rJ-ATd" secondAttribute="bottom" id="JOk-qB-PJT"/>
+                <constraint firstItem="WxD-C6-5PW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QjX-6W-r9j"/>
+                <constraint firstAttribute="trailing" secondItem="M8I-rJ-ATd" secondAttribute="trailing" id="fez-h7-5aa"/>
+                <constraint firstItem="WxD-C6-5PW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m4w-oX-g2x"/>
+                <constraint firstAttribute="bottom" secondItem="WxD-C6-5PW" secondAttribute="bottom" id="pea-VO-uBZ"/>
+                <constraint firstAttribute="trailing" secondItem="7KH-hI-VLT" secondAttribute="trailing" id="sF0-DZ-CBM"/>
+                <constraint firstItem="7KH-hI-VLT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zjo-d2-Lgy"/>
+            </constraints>
+            <size key="customSize" width="201" height="155"/>
+            <connections>
+                <outlet property="imageV" destination="WxD-C6-5PW" id="1hh-4F-g9k"/>
+                <outlet property="maskV" destination="7KH-hI-VLT" id="BEf-tf-Kj0"/>
+                <outlet property="selectBtn" destination="M8I-rJ-ATd" id="s0e-jD-UlE"/>
+            </connections>
+            <point key="canvasLocation" x="-237" y="99"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="privacy_album_item_select" width="40" height="40"/>
+        <image name="privacy_album_item_unselect" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

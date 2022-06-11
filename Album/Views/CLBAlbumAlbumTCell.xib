@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="KGk-i7-Jjw" customClass="CLBAlbumAlbumTCell" customModule="CleanB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="267" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="267" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JMV-gd-gC6">
+                        <rect key="frame" x="0.0" y="0.0" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JMV-gd-gC6" secondAttribute="height" multiplier="56:56" id="tOl-Rg-veQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D88-aI-fjG">
+                        <rect key="frame" x="64" y="17.5" width="45" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="num" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kqo-F8-HMv">
+                        <rect key="frame" x="117" y="19.5" width="28.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SelectNum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8r-pS-PRn">
+                        <rect key="frame" x="182" y="19.5" width="71" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J8r-pS-PRn" firstAttribute="centerY" secondItem="Kqo-F8-HMv" secondAttribute="centerY" id="1AE-ZU-KFI"/>
+                    <constraint firstItem="D88-aI-fjG" firstAttribute="centerY" secondItem="JMV-gd-gC6" secondAttribute="centerY" id="2jG-kt-2ra"/>
+                    <constraint firstItem="JMV-gd-gC6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3YM-hu-1Gc"/>
+                    <constraint firstAttribute="bottom" secondItem="JMV-gd-gC6" secondAttribute="bottom" id="7qG-mY-XvF"/>
+                    <constraint firstItem="D88-aI-fjG" firstAttribute="leading" secondItem="JMV-gd-gC6" secondAttribute="trailing" constant="8" symbolic="YES" id="EYS-qQ-6CM"/>
+                    <constraint firstItem="Kqo-F8-HMv" firstAttribute="leading" secondItem="D88-aI-fjG" secondAttribute="trailing" constant="8" id="Q1y-vM-ldU"/>
+                    <constraint firstAttribute="trailing" secondItem="J8r-pS-PRn" secondAttribute="trailing" constant="14" id="gus-6m-yTk"/>
+                    <constraint firstItem="JMV-gd-gC6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="k00-rA-Qfe"/>
+                    <constraint firstItem="Kqo-F8-HMv" firstAttribute="centerY" secondItem="D88-aI-fjG" secondAttribute="centerY" id="re4-8W-pYU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageV" destination="JMV-gd-gC6" id="3tL-uI-jMF"/>
+                <outlet property="nameL" destination="D88-aI-fjG" id="ZpM-ok-uKP"/>
+                <outlet property="numL" destination="Kqo-F8-HMv" id="U3D-aO-SsQ"/>
+                <outlet property="selectedNumL" destination="J8r-pS-PRn" id="6Rs-Et-c2a"/>
+            </connections>
+            <point key="canvasLocation" x="-73" y="-112"/>
+        </tableViewCell>
+    </objects>
+</document>
